@@ -1,0 +1,39 @@
+@extends('layouts.base')
+
+@section('content')
+
+<div class="title m-b-md">
+    Expense Report
+</div>
+
+<div>
+    <div class="row">
+        <div class="col">
+            <h1>New Reports</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <a href="/expense_reports" class="btn btn-secondary">Back</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <form action="/expense_reports" method="POST">
+            @csrf
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="Type a title">    
+                </div>
+                <button class="btn btn-primary" Type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+            
+        </div>
+    </div>
+</div>
+
+               
+
+@endsection
