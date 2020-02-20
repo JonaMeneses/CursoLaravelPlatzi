@@ -25,6 +25,12 @@
                     <td>
                         {{$expenseReport -> title}}
                     </td>
+                    <td>
+                        <a href="/expense_reports/{{$expenseReport -> id}}/edit">Edit</a>
+                    </td>
+                    <td>
+                        <a href="/expense_reports/{{$expenseReport -> id}}/ConfirmDelete">Delete</a>
+                    </td>
                     </tr>
                 @endforeach
             </table>
