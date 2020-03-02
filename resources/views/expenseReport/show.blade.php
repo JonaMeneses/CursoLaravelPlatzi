@@ -37,6 +37,12 @@
         </div>
     </div>
 
+    <div class="row">
+        <div class="col">
+            <a class="btn btn-primary" href="/expense_reports/{{$report->id}}/confirmSendMail">Send Email</a>
+        </div>
+    </div>
+
         </div>
     </div>
 </div>
